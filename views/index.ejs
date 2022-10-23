@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Video Thumbnail Extractor</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">
+            Youtube Video Thumbnail Extractor Online Tool
+        </h1>
+        <form autocomplete="off" action="/getvideothumbnail" method="post">
+            <div class="form-group">
+                <label for="url">Youtube Video URL:</label>
+                <input class="form-control" type="text" name="url" required placeholder="Enter URL" id="">
+            </div>
+            <div class="form-group">
+                <label for="quality">Choose Quality:</label>
+                <select class="form-control" name="quality" id="">
+                    <option value="default">Default</option>
+                    <option value="medium">Medium</option>
+                    <option value="high" selected>High</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-block btn-danger">
+                    Download Thumbnail
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
